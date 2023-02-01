@@ -85,14 +85,20 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "seconddataset",
+						"referenceName": "sourcedataset",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "seconddataset",
-						"type": "DatasetReference"
+						"referenceName": "outputdataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"outputDp": {
+								"value": "@concat(substring(activity('Get FileLastModified').output.lastModified,0,4),'/',substring(activity('Get FileLastModified').output.lastModified,5,2),'/',substring(activity('Get FileLastModified').output.lastModified,8,2))",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
