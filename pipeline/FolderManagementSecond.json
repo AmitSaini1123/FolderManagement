@@ -155,7 +155,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"DestinationDirDp": {
-											"value": "@concat(substring(activity('Get Last Modified of File ').output.lastModified,0,4),'/',substring(activity('Get Last Modified of File ').output.lastModified,5,2),'/',substring(activity('Get Last Modified of File ').output.lastModified,8,2))\r\n",
+											"value": "@concat(substring(activity('Get Last Modified of File ').output.lastModified,0,4),'/',substring(activity('Get Last Modified of File ').output.lastModified,5,2),'/',substring(activity('Get Last Modified of File ').output.lastModified,8,2))\n",
 											"type": "Expression"
 										},
 										"DestinationFileDp": {
