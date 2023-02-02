@@ -154,7 +154,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"DestinationDir": {
-											"value": "@concat(\nsubstring(convertFromUtc(activity('Get FileLastModified').output.lastModified, 'Indian Standard Time', 'yyyy-MM-dd HH:mm:ss'),0,4),'/',\nsubstring(convertFromUtc(activity('Get FileLastModified').output.lastModified, 'Indian Standard Time', 'yyyy-MM-dd HH:mm:ss'),5,2),'/',\nsubstring(convertFromUtc(activity('Get FileLastModified').output.lastModified, 'Indian Standard Time', 'yyyy-MM-dd HH:mm:ss'),8,2)\n)",
+											"value": "@concat(\nsubstring(convertTimeZone(activity('Get FileLastModified').output.lastModified,'UTC','Indian Standard Time'),0,4),'/',\nsubstring(convertTimeZone(activity('Get FileLastModified').output.lastModified,'UTC','Indian Standard Time'),5,2),'/',\nsubstring(convertTimeZone(activity('Get FileLastModified').output.lastModified,'UTC','Indian Standard Time'),8,2)\n)",
 											"type": "Expression"
 										},
 										"DestinationFile": {
