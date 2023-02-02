@@ -8,6 +8,9 @@
 				"pipelineReference": {
 					"referenceName": "FolderManagementSecond",
 					"type": "PipelineReference"
+				},
+				"parameters": {
+					"first": "gg"
 				}
 			}
 		],
