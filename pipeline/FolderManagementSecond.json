@@ -163,7 +163,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"DestinationDir": {
-											"value": "@concat(\nsubstring(convertTimeZone(activity('Get FileLastModified').output.lastModified,'UTC','India Standard Time'),0,4),'/',\nsubstring(convertTimeZone(activity('Get FileLastModified').output.lastModified,'UTC','India Standard Time'),5,2),'/',\nsubstring(convertTimeZone(activity('Get FileLastModified').output.lastModified,'UTC','India Standard Time'),8,2)\n)",
+											"value": "@concat(\nsubstring(activity('Get FileLastModified').output.lastModified,0,4),'/',\nsubstring(activity('Get FileLastModified').output.lastModified,5,2),'/',\nsubstring(activity('Get FileLastModified').output.lastModified,8,2)\n)",
 											"type": "Expression"
 										},
 										"DestinationFile": {
