@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "inputdataset",
+						"referenceName": "sourcedataset",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
