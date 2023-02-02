@@ -1,12 +1,15 @@
 {
-	"name": "sourceDataset01",
+	"name": "outputDataset01",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"SourceDp": {
+			"DestinationDir": {
+				"type": "string"
+			},
+			"DestinationFile": {
 				"type": "string"
 			}
 		},
@@ -16,10 +19,14 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().SourceDp",
+					"value": "@dataset().DestinationFile",
 					"type": "Expression"
 				},
-				"fileSystem": "secondfolderinput"
+				"folderPath": {
+					"value": "@dataset().DestinationDir",
+					"type": "Expression"
+				},
+				"fileSystem": "secondfolderoutput"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
