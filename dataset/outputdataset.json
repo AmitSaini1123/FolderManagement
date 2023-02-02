@@ -2,7 +2,7 @@
 	"name": "outputdataset",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeLinkServices",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
