@@ -8,12 +8,6 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "FolderManagementSecond",
-					"type": "PipelineReference"
-				}
-			},
-			{
-				"pipelineReference": {
 					"referenceName": "FolderManagement",
 					"type": "PipelineReference"
 				}
