@@ -85,7 +85,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "inputdataset",
+						"referenceName": "sourcedataset",
 						"type": "DatasetReference"
 					}
 				],
