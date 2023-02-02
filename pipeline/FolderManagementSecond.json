@@ -178,11 +178,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"first": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
